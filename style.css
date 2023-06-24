@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,400&family=Lato:ital,wght@0,700;1,300&family=Poppins:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+.bg{
+    width:100vw;
+    height: 100vh;
+    background:url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.glass{
+    background:linear-gradient(135deg ,rgba(255,255,255,0.1) ,rgba(255,255,255,0));
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37 );
+}
+.input-container{
+    padding: 30px;
+}
+.display-container{
+    padding: 10px;
+    position: relative;
+
+}
+
+.display{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: large;
+    width: 80%;
+    color: #313131;
+}
+
+.display-container button{
+    position: absolute;
+    top:  10%;
+    right:1.3rem;
+}
+
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strength-container p{
+    color: aliceblue;
+}
+
+.indicator{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    width:1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.generateBtn{
+    width: 100%;
+    padding: 0.5rem 0;
+    background: transparent;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+   
+}
+.check{
+    color: aliceblue;
+}
+
+.slider{
+    width: 100%;
+    padding: 0.5rem;
+
+}
+.copy-tooltip {
+    position: absolute;
+    font-size: 1rem;
+    top: -35px;
+    left: -25px;
+    padding: 3px 10px; border-radius: 0.8rem;
+    color: aliceblue;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+}
+
+.copy-tooltip.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.copy-button{
+    background-color: transparent;
+    border:none;
+}
